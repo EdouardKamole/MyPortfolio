@@ -1,0 +1,113 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+    display: inline-block;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75em 1.5em;
+    display: block;
+    transition: background 0.3s, color 0.3s;
+    font-size: 1em;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background: #007bff;
+    color: #fff;
+    border-radius: 5px;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Clearfix for Header */
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Skills Page Styles */
+#skills {
+    padding: 4em 0;
+    background: #f8f9fa;
+}
+
+.skills-content {
+    max-width: 800px;
+    margin: auto;
+    padding: 2em;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill {
+    margin-bottom: 1.5em;
+}
+
+.skill h3 {
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+}
+
+.skill-bar {
+    height: 20px;
+    border-radius: 5px;
+    background: #e0e0e0;
+    position: relative;
+    overflow: hidden;
+    width: 0; /* Start with 0 width */
+    transition: width 1s ease-in-out;
+}
+
+.skill-bar::before {
+    content: '';
+    display: block;
+    height: 100%;
+    background: #007bff;
+    width: 0; /* Will be updated by JavaScript */
+    transition: width 1s ease-in-out;
+}

@@ -1,0 +1,104 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+    display: inline-block;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75em 1.5em;
+    display: block;
+    transition: background 0.3s, color 0.3s;
+    font-size: 1em;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background: #007bff;
+    color: #fff;
+    border-radius: 5px;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Clearfix for Header */
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Testimonials Page Styles */
+#testimonials {
+    padding: 4em 0;
+    background: #f8f9fa;
+}
+
+.testimonial {
+    max-width: 800px;
+    margin: auto;
+    padding: 2em;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5em;
+}
+
+blockquote {
+    margin: 0;
+    padding: 1em;
+    border-left: 4px solid #007bff;
+    font-style: italic;
+}
+
+blockquote footer {
+    margin-top: 1em;
+    font-size: 0.9em;
+    color: #555;
+}
+
+blockquote cite {
+    font-style: normal;
+}
